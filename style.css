@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-radial-gradient(#187597,#0c0101);
+    /* background:linear-gradient(-45deg,#413d3d 6%, #aaa6a6 28%, #413d3d 50%, #aaa6a6 72%,  #413d3d 94%) */
+}
+
+h1{
+    color: white;
+    font-size: 80px;
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    margin-bottom: 20px;
+}
+
+.container span{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.container span::before{
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+
+.container span::after{
+    content: var(--l);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+}
+
+.container span:hover{
+    filter: contrast(250%);
+}
+
+.container span :nth-child(1){
+    color: aqua;
+}
+.container span :nth-child(2){
+    color: rgb(72, 0, 255);
+}
+.container span :nth-child(3){
+    color: rgb(221, 255, 0);
+}
+.container span :nth-child(4){
+    color: rgb(255, 0, 195);
+}
+.container span :nth-child(5){
+    color: rgb(255, 196, 0);
+}
+
+#container2{
+    width: 32rem;
+    height: 36rem;
+    background: linear-gradient(-45deg, #111111 16%,#900000 50%, #111111 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    border: double 5px #d8bd0a;
+}
+
+#img{
+    width: 200px;
+    height: 250px;
+    background-color: transparent;
+}
+
+#character{
+    color: rgb(248, 222, 27);
+    text-shadow: 2px 2px rgb(128, 105, 105);
+    /* color: transparent; */
+    font-size: 45px;
+    font-style: oblique;
+}
+
+#quote{
+    background: linear-gradient(to right, rgb(255, 230, 67),rgb(234, 231, 231));
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 75%;
+    font-size: 23px;
+    text-align: center;
+    font-style: oblique;
+}
+
+#btnSearch{
+    width: 120px;
+    height: 45px;
+    background: linear-gradient(#e2e611,#e8ccb0);
+    border-radius: 20px;
+    border: solid 2px rgb(138, 72, 72);
+    font-size: 19px;
+    font-style: oblique;
+}
